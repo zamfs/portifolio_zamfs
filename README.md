@@ -2,6 +2,10 @@
 
 Primeira versão em HTML, CSS, JavaScript e Bootstrap 5, baseada nas referências de `docs`.
 
+## Acesse o portfólio
+
+[https://zamfs.github.io/portifolio_zamfs/](https://zamfs.github.io/portifolio_zamfs/)
+
 ## Como abrir
 
 Abra `index.html` no navegador. Não é necessário instalar dependências ou compilar o projeto. Também é possível usar a extensão Live Server do VS Code.
@@ -32,4 +36,4 @@ O grid e o menu responsivo usam Bootstrap. As prévias dos projetos são ilustra
 - Acesso ao Race Strategy: `http://150.230.230.27:8080/`, informado pelo autor.
 - Demonstração do NovaJornada: `https://novajornada.onrender.com`. Versão apenas demonstrativa por enquanto, conforme informado pelo autor e indicado no cartão do projeto.
 
-O projeto permanece local, pronto para ajustes e futura publicação.
+O portfólio está publicado no GitHub Pages pelo link acima.
