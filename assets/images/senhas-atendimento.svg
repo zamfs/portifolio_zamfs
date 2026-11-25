@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+  <title>Sistema de gerenciamento de senhas — tela de atendimento</title>
+  <desc>Representação do terminal baseada no código do projeto, com pacientes fictícios e três próximas senhas por prioridade.</desc>
+  <rect width="1000" height="680" rx="16" fill="#101010"/>
+  <path d="M16 0H984Q1000 0 1000 16V48H0V16Q0 0 16 0" fill="#242424"/>
+  <g font-family="Consolas, monospace" fill="#e8e8e8">
+    <text x="24" y="31" font-size="18">C:\ Sistema_de_Gerenciamento_de_Senhas.exe</text>
+    <text x="950" y="30" font-size="20">×</text>
+    <g fill="#f5f5f5" font-weight="700" font-size="31">
+      <text x="40" y="112">EM ATENDIMENTO</text>
+      <text x="40" y="130" font-size="16">══════════════════════════════════════════════</text>
+    </g>
+    <text x="40" y="184" font-size="22">EM ATENDIMENTO</text>
+    <text x="40" y="225" font-size="21">Joao - Senha: U001 - Categoria: Urgente</text>
+    <text x="40" y="300" font-size="22">PROXIMAS SENHAS</text>
+    <text x="40" y="347" font-size="21">Proxima: P001 - Ana - Categoria: Preferencial</text>
+    <text x="40" y="389" font-size="21">2: N001 - Carlos - Categoria: Normal</text>
+    <text x="40" y="431" font-size="21">3: N002 - Pedro - Categoria: Normal</text>
+    <text x="40" y="516" font-size="21">1 - Finalizar atendimento e chamar proximo</text>
+    <text x="40" y="558" font-size="21">2 - Voltar</text>
+    <text x="40" y="611" font-size="21">Opcao: <tspan fill="#ffffff">_</tspan></text>
+  </g>
+  <text x="40" y="653" font-family="Arial, sans-serif" font-size="15" fill="#9ca3af">Representação da interface · pacientes fictícios</text>
+</svg>

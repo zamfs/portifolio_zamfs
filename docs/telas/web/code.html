@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Zamorano Sousa | Ciência da Computação</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#dce9ff",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#0051d6",
+            "tertiary-fixed-dim": "#b4c5ff",
+            "outline-variant": "#c4c5d7",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#b7c4ff",
+            "on-primary-fixed": "#001551",
+            "on-surface-variant": "#434655",
+            "tertiary-fixed": "#dbe1ff",
+            "outline": "#747686",
+            "primary-container": "#1d4ed8",
+            "on-tertiary-container": "#c9d4ff",
+            "primary": "#0037b0",
+            "secondary": "#565e74",
+            "surface-container": "#e5eeff",
+            "surface-variant": "#d3e4fe",
+            "on-secondary-fixed-variant": "#3f465c",
+            "tertiary": "#003ca3",
+            "secondary-fixed-dim": "#bec6e0",
+            "surface-container-highest": "#d3e4fe",
+            "secondary-container": "#dae2fd",
+            "inverse-surface": "#213145",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#00174b",
+            "on-background": "#0b1c30",
+            "surface-tint": "#2151da",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#5c647a",
+            "on-primary-fixed-variant": "#0039b5",
+            "surface": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-bright": "#ffffff",
+            "background": "#ffffff",
+            "secondary-fixed": "#dae2fd",
+            "primary-fixed": "#dce1ff",
+            "on-secondary": "#ffffff",
+            "on-surface": "#0b1c30",
+            "on-primary-container": "#cad3ff",
+            "primary-fixed-dim": "#b7c4ff",
+            "inverse-on-surface": "#eaf1ff",
+            "surface-container-low": "#f8faff",
+            "on-secondary-fixed": "#131b2e",
+            "error": "#ba1a1a",
+            "surface-dim": "#cbdbf5",
+            "on-tertiary-fixed-variant": "#003ea8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.375rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter-desktop": "2rem",
+            "space-xs": "0.25rem",
+            "space-3xl": "5.5rem",
+            "space-2xl": "3.5rem",
+            "space-md": "1rem",
+            "margin": "1.5rem",
+            "space-xl": "2rem",
+            "margin-desktop": "2.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter", "sans-serif"],
+            "code-sm": ["JetBrains Mono", "monospace"],
+            "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "display": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "display-mobile": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- CABEÇALHO (NAVBAR) -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="h-16 max-w-[1140px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between">
+<a class="flex items-center gap-2 group text-left" href="#">
+<span class="font-headline-sm text-lg md:text-xl font-bold text-on-surface group-hover:text-primary transition-colors tracking-tight">Zamorano Sousa</span>
+<span class="inline-flex items-center px-1.5 py-[2px] rounded bg-surface-container-low text-primary border border-outline-variant/40 font-code-sm text-[11px] font-semibold uppercase tracking-wider">CS</span>
+</a>
+<div class="flex items-center gap-6">
+<nav class="flex items-center gap-6 md:gap-8">
+<a class="font-label-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#projetos">Projetos</a>
+<a class="font-label-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#sobre">Sobre</a>
+<a class="font-label-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#contato">Contato</a>
+<a class="font-label-md text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[15px]">north_east</span>
+</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen">
+<div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full flex flex-col justify-between px-margin lg:px-margin-desktop max-w-[1140px] mx-auto pt-16 pb-16 md:pt-24 md:pb-20">
+<div class="flex flex-col items-start max-w-3xl">
+<!-- Tag Superior -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/5 text-primary border border-primary/20 mb-8">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-code-sm text-xs font-semibold uppercase tracking-wider">ESTUDANTE DE CIÊNCIA DA COMPUTAÇÃO</span>
+</div>
+<!-- Título Grande em Duas Linhas -->
+<h1 class="font-display text-[46px] md:text-[64px] font-extrabold text-on-surface tracking-tight leading-[1.08] mb-6">
+            Olá, eu sou<br/>
+<span class="text-primary-container inline-flex items-baseline">Zamorano<span class="text-primary-container ml-0.5 select-none">*</span></span>
+</h1>
+<!-- Descrição Fiel -->
+<p class="font-body-lg text-lg md:text-[19px] text-on-surface-variant max-w-2xl leading-relaxed mb-9">
+            Desenvolvo projetos web e aprendo na prática, construindo soluções reais com foco em simplicidade, rigor algorítmico e design funcional.
+          </p>
+<!-- Ações -->
+<div class="flex flex-wrap items-center gap-3.5">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-white font-label-md text-sm font-semibold hover:bg-primary transition-all duration-200 shadow-sm active:translate-y-0.5" href="#projetos">
+<span>Conheça meus projetos</span>
+<span class="material-symbols-outlined text-[17px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl bg-surface-container-low text-on-surface border border-outline-variant/40 font-label-md text-sm font-medium hover:bg-surface-container hover:text-primary transition-all duration-200" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Indicação Sutil de Rolagem -->
+<div class="pt-20 md:pt-28 flex items-center justify-between text-outline">
+<a class="inline-flex items-center gap-2 font-code-sm text-xs font-medium uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#projetos">
+<span class="material-symbols-outlined text-[15px]">arrow_downward</span>
+<span>ROLE PARA EXPLORAR</span>
+</a>
+<span class="font-code-sm text-xs text-outline-variant hidden sm:inline">Portfólio // 2025</span>
+</div>
+</section>
+<!-- 01 / PROJETOS SELECIONADOS -->
+<section class="w-full py-16 px-margin lg:px-margin-desktop max-w-[1140px] mx-auto border-t border-outline-variant/20" id="projetos">
+<!-- Section Header -->
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-6 h-[2px] bg-primary-container"></span>
+<span class="font-code-sm text-xs text-primary font-bold uppercase tracking-widest">01 / PROJETOS SELECIONADOS</span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl font-bold text-on-surface tracking-tight mb-12">Obras em código</h2>
+<div class="flex flex-col gap-12">
+<!-- PROJETO 1: Agenda Pessoal -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#f8faff] border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<!-- Mockup de Notebook / Aplicação -->
+<div class="lg:col-span-7 bg-white rounded-xl border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col">
+<!-- Window Chrome -->
+<div class="flex items-center justify-between px-4 py-2.5 bg-slate-50 border-b border-outline-variant/30">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-white rounded border border-outline-variant/30 text-xs font-code-sm text-secondary">
+<span class="material-symbols-outlined text-[13px] text-emerald-600">lock</span>
+<span>agenda-pessoal.app/dashboard</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px]">tune</span>
+</div>
+<!-- Content Preview: Dashboard / Agenda -->
+<div class="p-5 flex flex-col gap-3.5 bg-white">
+<div class="flex items-center justify-between pb-2 border-b border-slate-100">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span class="font-headline-sm text-sm font-bold text-on-surface">Minhas Tarefas do Dia</span>
+</div>
+<span class="text-xs font-code-sm text-secondary">Quinta, 16 Out</span>
+</div>
+<!-- Tarefas -->
+<div class="space-y-2 font-body-sm text-sm">
+<div class="flex items-center justify-between bg-slate-50 border border-slate-100 px-3.5 py-2.5 rounded-lg">
+<div class="flex items-center gap-2.5">
+<span class="w-4 h-4 rounded border-2 border-primary-container flex items-center justify-center text-[11px] text-primary-container font-bold">✓</span>
+<span class="font-medium text-on-surface">Revisão de Estruturas de Dados</span>
+</div>
+<span class="font-code-sm text-xs font-semibold text-primary bg-primary/10 px-2.5 py-0.5 rounded">09:00</span>
+</div>
+<div class="flex items-center justify-between bg-slate-50 border border-slate-100 px-3.5 py-2.5 rounded-lg">
+<div class="flex items-center gap-2.5">
+<span class="w-4 h-4 rounded border-2 border-outline-variant"></span>
+<span class="font-medium text-on-surface">Compilação do Módulo Clínico</span>
+</div>
+<span class="font-code-sm text-xs font-semibold text-primary bg-primary/10 px-2.5 py-0.5 rounded">14:30</span>
+</div>
+<div class="flex items-center justify-between bg-slate-50 border border-slate-100 px-3.5 py-2.5 rounded-lg opacity-60">
+<div class="flex items-center gap-2.5">
+<span class="w-4 h-4 rounded bg-emerald-500 text-white flex items-center justify-center text-[10px]">✓</span>
+<span class="font-medium text-on-surface line-through">Modelagem de Banco MySQL</span>
+</div>
+<span class="font-code-sm text-xs font-semibold text-slate-500 bg-slate-200 px-2 py-0.5 rounded">Concluído</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Detalhes do Projeto -->
+<div class="lg:col-span-5 flex flex-col items-start">
+<span class="font-code-sm text-xs font-bold text-primary-container uppercase tracking-wider mb-2">Web App</span>
+<h3 class="font-headline-md text-2xl font-bold text-on-surface mb-2.5">Agenda pessoal</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mb-6 leading-relaxed">
+                Aplicação para organizar compromissos e tarefas de forma intuitiva e eficiente, estruturada para fluidez visual e resposta imediata.
+              </p>
+<!-- Badges de Tecnologias -->
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">HTML</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">CSS</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">JavaScript</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">Bootstrap 5</span>
+</div>
+<!-- Links -->
+<div class="flex items-center gap-6">
+<a class="font-label-md text-sm font-semibold text-primary hover:text-primary-container inline-flex items-center gap-1 group" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>Repositório</span>
+<span class="material-symbols-outlined text-[17px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+<a class="font-label-md text-sm font-semibold text-on-surface hover:text-primary inline-flex items-center gap-1 group" href="#">
+<span>Demonstração</span>
+<span class="material-symbols-outlined text-[17px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJETO 2: Sistema de Gerenciamento de Senhas -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#f8faff] border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<!-- Mockup de Terminal Escuro macOS Elegante -->
+<div class="lg:col-span-7 bg-[#17202e] text-slate-200 p-5 md:p-6 rounded-xl shadow-md font-code-sm text-xs md:text-sm overflow-hidden border border-slate-700">
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-800 text-slate-400">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+<span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+</div>
+<span class="text-xs text-slate-400 font-mono">clinic_queue.c — GCC Compiled · C99</span>
+<span class="material-symbols-outlined text-[15px] text-slate-500">terminal</span>
+</div>
+<div class="space-y-2 leading-relaxed font-mono">
+<p class="text-slate-400"><span class="text-emerald-400 font-semibold">$</span> ./clinic_queue.c --start-triagem</p>
+<p class="text-slate-300">[INFO] Sistema inicializado com fila encadeada e prioridades dinâmicas.</p>
+<div class="bg-primary/20 border-l-4 border-primary px-3 py-1.5 my-2 rounded-r">
+<p class="text-sky-300 font-semibold">&gt; [CHAMADA] GUICHE 01: <span class="bg-primary-container text-white px-1.5 py-0.5 rounded font-bold">P002</span> (PRIORIDADE)</p>
+</div>
+<p class="text-slate-400">&gt; PROXIMA: <span class="text-white font-medium">N001</span> (NORMAL)</p>
+<p class="text-slate-400">&gt; FILA ATUAL: <span class="text-slate-300">[N002, N003, N004, P003]</span></p>
+<p class="text-emerald-400/90">&gt; Validação: Fila sem gargalos • Status OK</p>
+</div>
+</div>
+<!-- Detalhes do Projeto -->
+<div class="lg:col-span-5 flex flex-col items-start">
+<span class="font-code-sm text-xs font-bold text-primary-container uppercase tracking-wider mb-2">GCC COMPILED · C99</span>
+<h3 class="font-headline-md text-2xl font-bold text-on-surface mb-2.5">Sistema de gerenciamento de senhas de atendimento</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mb-6 leading-relaxed">
+                Projeto desenvolvido em C para organizar a fila e prioridades de uma clínica médica, emitindo e chamando senhas estruturadas como N001 e P002 com validações rigorosas de fluxo.
+              </p>
+<!-- Badges de Tecnologias -->
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">C</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">Estruturas de Dados</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">Algoritmos</span>
+</div>
+<!-- Links -->
+<div>
+<a class="font-label-md text-sm font-semibold text-primary hover:text-primary-container inline-flex items-center gap-1 group" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>Repositório</span>
+<span class="material-symbols-outlined text-[17px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJETO 3: Race Strategy -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#f8faff] border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<!-- Mockup de Monitor Pit Lane Telemetria -->
+<div class="lg:col-span-7 bg-[#0b1326] text-white rounded-xl p-5 md:p-6 shadow-md border border-slate-800 flex flex-col gap-4 font-mono">
+<div class="flex items-center justify-between pb-3 border-b border-slate-800">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+<span class="font-bold text-sm text-white tracking-wide">PIT STRATEGY TELEMETRY</span>
+</div>
+<span class="text-xs text-primary-container font-semibold bg-primary-container/20 px-2 py-0.5 rounded">53 LAPS • MONZA GP</span>
+</div>
+<!-- Stints Timeline -->
+<div class="space-y-3 bg-[#111a33] p-4 rounded-lg border border-slate-800">
+<div>
+<div class="flex justify-between text-xs mb-1 text-slate-300">
+<span class="font-semibold text-red-400">● Stint 1 (Soft C4)</span>
+<span class="text-slate-400">Volta 1 - 18</span>
+</div>
+<div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-red-500 rounded-full" style="width: 34%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1 text-slate-300">
+<span class="font-semibold text-white">○ Stint 2 (Hard C2)</span>
+<span class="text-slate-400">Volta 19 - 53</span>
+</div>
+<div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 66%"></div>
+</div>
+</div>
+</div>
+<!-- Indicadores de Consumo e Janela -->
+<div class="grid grid-cols-2 gap-3 text-center">
+<div class="bg-[#111a33] p-3 rounded-lg border border-slate-800">
+<span class="text-[11px] text-slate-400 block uppercase">Consumo Estimado</span>
+<strong class="text-sky-400 text-base font-bold">1.82 kg / lap</strong>
+</div>
+<div class="bg-[#111a33] p-3 rounded-lg border border-slate-800">
+<span class="text-[11px] text-slate-400 block uppercase">Janela de Pit Stop</span>
+<strong class="text-emerald-400 text-base font-bold">L18 – L21</strong>
+</div>
+</div>
+</div>
+<!-- Detalhes do Projeto -->
+<div class="lg:col-span-5 flex flex-col items-start">
+<span class="font-code-sm text-xs font-bold text-primary-container uppercase tracking-wider mb-2">Simulador</span>
+<h3 class="font-headline-md text-2xl font-bold text-on-surface mb-2.5">Race Strategy</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mb-6 leading-relaxed">
+                Ferramenta para planejar estratégias de corrida automotiva, calcular consumo dinâmico de combustível, janelas de trocas de pneus e organizar stints de corrida.
+              </p>
+<!-- Badges de Tecnologias -->
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">JavaScript</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">Bootstrap</span>
+<span class="px-3 py-1 rounded-full bg-white border border-outline-variant/50 text-on-surface font-code-sm text-xs font-medium">Lógica de Cálculo</span>
+</div>
+<!-- Links -->
+<div class="flex items-center gap-6">
+<a class="font-label-md text-sm font-semibold text-primary hover:text-primary-container inline-flex items-center gap-1 group" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>Repositório</span>
+<span class="material-symbols-outlined text-[17px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+<a class="font-label-md text-sm font-semibold text-on-surface hover:text-primary inline-flex items-center gap-1 group" href="#">
+<span>Demonstração</span>
+<span class="material-symbols-outlined text-[17px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 02 / SOBRE MIM -->
+<section class="w-full py-16 px-margin lg:px-margin-desktop max-w-[1140px] mx-auto border-t border-outline-variant/20" id="sobre">
+<!-- Section Header -->
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-6 h-[2px] bg-primary-container"></span>
+<span class="font-code-sm text-xs text-primary font-bold uppercase tracking-widest">02 / SOBRE MIM</span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl font-bold text-on-surface tracking-tight mb-10">Perfil &amp; Fundamentos</h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Coluna Esquerda: Texto & Card Destacado -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<p class="font-body-lg text-base md:text-lg text-on-surface leading-relaxed">
+              Sou estudante de Ciência da Computação apaixonado por tecnologia e desenvolvimento de software. Busco constantemente aprender na prática, aplicando conceitos fundamentais na criação de aplicações reais, funcionais e com design acessível.
+            </p>
+<!-- Card Destaque Limpo -->
+<div class="p-6 rounded-2xl bg-[#f8faff] border border-outline-variant/30 text-on-surface">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-2xl shrink-0 mt-0.5">architecture</span>
+<div>
+<h4 class="font-headline-sm text-base md:text-lg font-bold mb-1">Arquitetura Limpa &amp; Eficiência</h4>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
+                    Interesse centrado em algoritmos estruturados, interfaces sem atrito e código sustentável.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Coluna Direita: Tecnologias -->
+<div class="lg:col-span-5 bg-[#f8faff] border border-outline-variant/30 p-6 md:p-8 rounded-2xl">
+<span class="font-code-sm text-xs text-primary font-bold uppercase tracking-widest block mb-4">LINGUAGENS &amp; TECNOLOGIAS</span>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-4 py-2 rounded-full bg-white border border-outline-variant/40 text-on-surface font-label-md text-sm font-medium shadow-xs">HTML</span>
+<span class="px-4 py-2 rounded-full bg-white border border-outline-variant/40 text-on-surface font-label-md text-sm font-medium shadow-xs">CSS</span>
+<span class="px-4 py-2 rounded-full bg-white border border-outline-variant/40 text-on-surface font-label-md text-sm font-medium shadow-xs">JavaScript</span>
+<span class="px-4 py-2 rounded-full bg-white border border-outline-variant/40 text-on-surface font-label-md text-sm font-medium shadow-xs">Bootstrap</span>
+<span class="px-4 py-2 rounded-full bg-white border border-outline-variant/40 text-on-surface font-label-md text-sm font-medium shadow-xs">C</span>
+<span class="px-4 py-2 rounded-full bg-white border border-outline-variant/40 text-on-surface font-label-md text-sm font-medium shadow-xs">MySQL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 03 / VAMOS CONVERSAR -->
+<section class="w-full py-16 px-margin lg:px-margin-desktop max-w-[1140px] mx-auto border-t border-outline-variant/20" id="contato">
+<!-- Section Header -->
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-6 h-[2px] bg-primary-container"></span>
+<span class="font-code-sm text-xs text-primary font-bold uppercase tracking-widest">03 / VAMOS CONVERSAR</span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl font-bold text-on-surface tracking-tight mb-3">Conecte-se comigo</h2>
+<p class="font-body-lg text-sm md:text-base text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+          Estou sempre aberto a novas conexões, aprendizados e oportunidades de colaboração. Sinta-se à vontade para me mandar uma mensagem ou acompanhar meus projetos.
+        </p>
+<!-- Grid de Contato -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Card GitHub -->
+<a class="p-6 rounded-2xl bg-[#f8faff] border border-outline-variant/30 hover:border-primary/40 transition-all duration-200 flex flex-col justify-between group h-44 shadow-xs hover:-translate-y-1" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<div class="flex justify-between items-start">
+<span class="w-10 h-10 rounded-xl bg-white border border-outline-variant/40 flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-[20px]">north_east</span>
+</div>
+<div>
+<span class="font-code-sm text-xs text-secondary block mb-1">Repositórios de Código</span>
+<span class="font-label-md text-sm md:text-base font-semibold text-on-surface group-hover:text-primary transition-colors">github.com/zamfs</span>
+</div>
+</a>
+<!-- Card LinkedIn -->
+<a class="p-6 rounded-2xl bg-[#f8faff] border border-outline-variant/30 hover:border-primary/40 transition-all duration-200 flex flex-col justify-between group h-44 shadow-xs hover:-translate-y-1" href="https://linkedin.com/in/zamoranosousa" rel="noopener noreferrer" target="_blank">
+<div class="flex justify-between items-start">
+<span class="w-10 h-10 rounded-xl bg-white border border-outline-variant/40 flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-[20px]">north_east</span>
+</div>
+<div>
+<span class="font-code-sm text-xs text-secondary block mb-1">Rede Profissional</span>
+<span class="font-label-md text-sm md:text-base font-semibold text-on-surface group-hover:text-primary transition-colors">linkedin.com/in/zamoranosousa</span>
+</div>
+</a>
+<!-- Card E-mail -->
+<a class="p-6 rounded-2xl bg-[#f8faff] border border-outline-variant/30 hover:border-primary/40 transition-all duration-200 flex flex-col justify-between group h-44 shadow-xs hover:-translate-y-1" href="mailto:contato@exemplo.com">
+<div class="flex justify-between items-start">
+<span class="w-10 h-10 rounded-xl bg-white border border-outline-variant/40 flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-[20px]">north_east</span>
+</div>
+<div>
+<span class="font-code-sm text-xs text-secondary block mb-1">Contato Direto</span>
+<span class="font-label-md text-sm md:text-base font-semibold text-on-surface group-hover:text-primary transition-colors">contato@exemplo.com</span>
+</div>
+</a>
+</div>
+</section>
+</div>
+</main>
+<!-- RODAPÉ -->
+<footer class="w-full bg-[#f8faff] border-t border-outline-variant/30 py-8">
+<div class="max-w-[1140px] mx-auto px-margin lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4 text-on-surface-variant font-body-sm text-sm">
+<p class="text-center md:text-left">
+        Zamorano Sousa — Estudante de Ciência da Computação
+      </p>
+<div class="flex items-center gap-4 text-xs font-code-sm text-secondary">
+<span>© 2025 Zamorano Sousa. Todos os direitos reservados.</span>
+</div>
+</div>
+</footer>
+</body></html>

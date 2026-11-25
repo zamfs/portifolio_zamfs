@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "inverse-on-surface": "#eaf1ff", "on-primary": "#ffffff", "primary-container": "#1d4ed8", "primary-fixed": "#dce1ff", "primary": "#0037b0", "surface-container-highest": "#d3e4fe", "on-tertiary-container": "#c9d4ff", "on-tertiary-fixed-variant": "#003ea8", "tertiary-fixed": "#dbe1ff", "tertiary": "#003ca3", "on-secondary-fixed": "#131b2e", "surface-dim": "#cbdbf5", "tertiary-fixed-dim": "#b4c5ff", "on-secondary": "#ffffff", "background": "#f8f9ff", "primary-fixed-dim": "#b7c4ff", "outline": "#747686", "on-background": "#0b1c30", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#3f465c", "on-primary-container": "#cad3ff", "secondary-container": "#dae2fd", "on-secondary-container": "#5c647a", "surface-bright": "#f8f9ff", "on-tertiary-fixed": "#00174b", "on-surface-variant": "#434655", "tertiary-container": "#0051d6", "surface-container-high": "#dce9ff", "on-surface": "#0b1c30", "inverse-surface": "#213145", "secondary-fixed": "#dae2fd", "surface": "#f8f9ff", "surface-variant": "#d3e4fe", "secondary": "#565e74", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#2151da", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c5d7", "inverse-primary": "#b7c4ff", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#0039b5", "on-primary-fixed": "#001551" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "1.5rem", "margin-desktop": "3rem", "space-2xl": "4rem", "space-3xl": "6rem", "gutter": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "code-sm": ["JetBrains Mono"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "display": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.025em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "code-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500"}], "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-sm": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "display-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "800"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}], "display": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}] } } } }</script></head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><a class="text-on-surface font-headline-sm text-headline-sm tracking-tight" data-path="portfolio" href="#">Zamorano Sousa</a><span class="font-code-sm text-code-sm text-primary px-space-xs py-0.5 bg-primary-fixed/50 rounded-lg">CS</span></div><div class="flex items-center gap-space-sm"><button aria-label="Menu de navegação" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary rounded-xl transition-colors" onclick="document.getElementById('mobile-drawer').classList.toggle('hidden')" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="hidden px-gutter pb-space-md pt-space-xs bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(15,23,42,0.05)]" id="mobile-drawer"><div class="flex flex-col gap-space-xs font-label-md text-label-md"><a class="px-space-sm py-space-sm text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="projetos" href="#"><span>Projetos</span><span class="material-symbols-outlined text-[18px]">terminal</span></a><a class="px-space-sm py-space-sm text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="sobre" href="#"><span>Sobre</span><span class="material-symbols-outlined text-[18px]">history_edu</span></a><a class="px-space-sm py-space-sm text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="contato" href="#"><span>Contato</span><span class="material-symbols-outlined text-[18px]">alternate_email</span></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. SEÇÃO DE APRESENTAÇÃO (HERO) -->
+<section class="w-full px-gutter py-space-xl flex flex-col justify-start" id="inicio">
+<div class="flex flex-col gap-space-md">
+<!-- Tag / Subtítulo Superior -->
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-code-sm text-code-sm uppercase tracking-widest text-secondary">
+          Estudante de Ciência da Computação
+        </span>
+</div>
+<!-- Título de Destaque -->
+<div class="relative mt-space-xs">
+<h1 class="font-display-mobile text-display-mobile tracking-tight leading-none text-on-surface">
+          Olá, eu sou<br/>
+<span class="text-primary-container inline-flex items-center">
+            Zamorano
+            <span class="text-primary-container text-[28px] leading-none ml-1 select-none font-display transform hover:rotate-45 transition-transform inline-block">*</span>
+</span>
+</h1>
+</div>
+<!-- Parágrafo Descritivo -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-xs leading-relaxed">
+        Desenvolvo projetos web e aprendo na prática, construindo soluções reais com foco em simplicidade, rigor algorítmico e design funcional.
+      </p>
+<!-- Ações Hero -->
+<div class="flex flex-col gap-space-sm sm:flex-row sm:items-center mt-space-md">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 bg-primary-container text-on-primary font-label-md text-label-md rounded-xl shadow-sm hover:bg-primary transition-all active:scale-[0.98]" href="#projetos">
+<span>Conheça meus projetos</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 bg-surface-container-low text-on-surface font-label-md text-label-md rounded-xl hover:bg-surface-container transition-all" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_outward</span>
+</a>
+</div>
+<!-- Indicador Sutil de Rolagem -->
+<div class="pt-space-xl pb-space-xs flex items-center gap-space-xs text-secondary opacity-75">
+<span class="material-symbols-outlined text-[18px] animate-bounce">expand_more</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Role para explorar</span>
+</div>
+</div>
+</section>
+<!-- 2. SEÇÃO PROJETOS SELECIONADOS -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-lowest" id="projetos">
+<div class="flex flex-col gap-space-xl">
+<!-- Cabeçalho de Seção Editorial -->
+<div class="flex flex-col gap-space-xs">
+<div class="w-8 h-1 bg-primary-container rounded-full mb-space-xs"></div>
+<span class="font-code-sm text-code-sm text-secondary tracking-widest uppercase">01 / Projetos selecionados</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Obras em código</h2>
+</div>
+<!-- Lista de Projetos -->
+<div class="flex flex-col gap-space-2xl">
+<!-- Projeto 1: Agenda Pessoal -->
+<article class="flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-2xl">
+<!-- Visual Preview / Mockup Editorial -->
+<div class="relative w-full aspect-video rounded-xl bg-surface-container overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Clean minimalist interface of a modern personal task calendar application displayed on a digital screen, crisp typography, blue accents, light mode, productivity dashboard, white aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByYRkzfRSInJVdWOFrySSOX-pSBPMZfm3GKFxADhcHBiXLXDfoBZSxp7L-zhWeobfZ7G26LoMFkd8Kg65erobksmZ9wM0oDZc2V1AFsfJxaXC4tFkolhvQ-8wOFX15JpxrXm1tLXVC16YsQ9VD5awpiZQ0eMrscB5Z4qQphChi-RV9TgH0Op63Sno0NkpJto4DvMIEkKBS9qMKwKblIgbdUVe3QUbw37m_w80q74w"/>
+<div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded-lg shadow-sm">
+<span class="font-code-sm text-[11px] text-primary-container">Web App</span>
+</div>
+</div>
+<!-- Informações -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Agenda pessoal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Aplicação para organizar compromissos e tarefas de forma intuitiva e eficiente, estruturada para fluidez visual e resposta imediata.
+            </p>
+</div>
+<!-- Tags Tecnológicas -->
+<div class="flex items-center gap-space-xs flex-wrap font-code-sm text-code-sm text-secondary py-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">HTML</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">CSS</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">JavaScript</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">Bootstrap 5</span>
+</div>
+<!-- Links Interativos -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>Repositório</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span>Demonstração</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Projeto 2: Sistema de Gerenciamento de Senhas -->
+<article class="flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-2xl">
+<!-- Terminal / Preview Mockup -->
+<div class="relative w-full aspect-video rounded-xl bg-on-surface p-space-md flex flex-col justify-between overflow-hidden shadow-inner">
+<div class="flex items-center gap-1.5 opacity-60">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
+<span class="font-code-sm text-[10px] text-surface-container-low ml-2">clinic_queue.c</span>
+</div>
+<div class="font-code-sm text-code-sm text-primary-fixed-dim flex flex-col gap-1 py-space-xs">
+<span class="text-surface-container-highest">&gt; [CHAMADA] GUICHE 01: <strong class="text-on-primary font-bold">P002 (PRIORIDADE)</strong></span>
+<span class="opacity-70">&gt; PROXIMA: N001 (NORMAL)</span>
+<span class="opacity-50">&gt; FILA TOTAL: 8 PACIENTES ATIVOS</span>
+</div>
+<div class="text-right">
+<span class="font-code-sm text-[10px] text-outline">GCC Compiled • C99</span>
+</div>
+</div>
+<!-- Informações -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sistema de gerenciamento de senhas de atendimento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Projeto desenvolvido em C para organizar a fila e prioridades de uma clínica médica, emitindo e chamando senhas estruturadas como N001 e P002 com validações rigorosas de fluxo.
+            </p>
+</div>
+<!-- Tags Tecnológicas -->
+<div class="flex items-center gap-space-xs flex-wrap font-code-sm text-code-sm text-secondary py-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">C</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">Estruturas de Dados</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">Algoritmos</span>
+</div>
+<!-- Links Interativos -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>Repositório</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Projeto 3: Race Strategy -->
+<article class="flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-2xl">
+<!-- Visual Preview / Mockup Editorial -->
+<div class="relative w-full aspect-video rounded-xl bg-surface-container overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Motorsport race pit stop strategy dashboard interface showing tire degradation graphs, fuel telemetry calculators, cobalt blue data lines on high-key white background, modern telemetry app UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs1XsYQHqqRDGPl2pvPwgDqNtfmadjEr5ziH4s2rDvvmBaG-SY52Qu4p5a4sZzVBeCHVmwcnPLCNlYE4YS1VwGOZb4X4E03-_DyndSnFH8FVDeuPo56-s_OAd-KTEM2CsG_cfUTLz2ezjhMvCKmDWJOd-AGGREehRWIJV0cSiwQpO1a28fSF5N-rqr96qGqEfg53c3NkxOCaHeAEr4x1fqpCAGms1YaJcpudk_8p8"/>
+<div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded-lg shadow-sm">
+<span class="font-code-sm text-[11px] text-primary-container">Simulador</span>
+</div>
+</div>
+<!-- Informações -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Race Strategy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Ferramenta para planejar estratégias de corrida automotiva, calcular consumo dinâmico de combustível, janelas de trocas de pneus e organizar stints de corrida.
+            </p>
+</div>
+<!-- Tags Tecnológicas -->
+<div class="flex items-center gap-space-xs flex-wrap font-code-sm text-code-sm text-secondary py-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">JavaScript</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">Bootstrap</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 bg-surface-container-lowest rounded-md">Lógica de Cálculo</span>
+</div>
+<!-- Links Interativos -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<span>Repositório</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span>Demonstração</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 3. SEÇÃO SOBRE -->
+<section class="w-full px-gutter py-space-2xl" id="sobre">
+<div class="flex flex-col gap-space-xl">
+<!-- Cabeçalho de Seção Editorial -->
+<div class="flex flex-col gap-space-xs">
+<div class="w-8 h-1 bg-primary-container rounded-full mb-space-xs"></div>
+<span class="font-code-sm text-code-sm text-secondary tracking-widest uppercase">02 / Sobre mim</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Perfil &amp; Fundamentos</h2>
+</div>
+<!-- Apresentação Textual -->
+<div class="flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Sou estudante de Ciência da Computação apaixonado por tecnologia e desenvolvimento de software. Busco constantemente aprender na prática, aplicando conceitos fundamentais na criação de aplicações reais, funcionais e com design acessível.
+        </p>
+<!-- Mini Bloco de Filosofia de Código -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">terminal</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface">Arquitetura Limpa &amp; Eficiência</span>
+<span class="font-body-sm text-body-sm text-secondary">Interesse centrado em algoritmos estruturados, interfaces sem atrito e código sustentável.</span>
+</div>
+</div>
+</div>
+<!-- Tecnologias e Ferramentas (Pílulas Tipográficas Discretas) -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Linguagens &amp; Tecnologias</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:text-primary transition-colors cursor-default">HTML</span>
+<span class="px-3.5 py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:text-primary transition-colors cursor-default">CSS</span>
+<span class="px-3.5 py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:text-primary transition-colors cursor-default">JavaScript</span>
+<span class="px-3.5 py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:text-primary transition-colors cursor-default">Bootstrap</span>
+<span class="px-3.5 py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:text-primary transition-colors cursor-default">C</span>
+<span class="px-3.5 py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-full shadow-sm hover:text-primary transition-colors cursor-default">MySQL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SEÇÃO CONTATO -->
+<section class="w-full px-gutter py-space-2xl bg-surface-container-lowest" id="contato">
+<div class="flex flex-col gap-space-xl">
+<!-- Cabeçalho de Seção Editorial -->
+<div class="flex flex-col gap-space-xs">
+<div class="w-8 h-1 bg-primary-container rounded-full mb-space-xs"></div>
+<span class="font-code-sm text-code-sm text-secondary tracking-widest uppercase">03 / Vamos conversar</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Conecte-se comigo</h2>
+</div>
+<!-- Texto Convidativo -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Estou sempre aberto a novas conexões, aprendizados e oportunidades de colaboração. Sinta-se à vontade para me mandar uma mensagem ou acompanhar meus projetos.
+      </p>
+<!-- Links Diretos e Elegantes -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- GitHub -->
+<a class="flex items-center justify-between p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl transition-all group" href="https://github.com/zamfs" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">GitHub</span>
+<span class="font-code-sm text-code-sm text-secondary">github.com/zamfs</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_outward</span>
+</a>
+<!-- LinkedIn -->
+<a class="flex items-center justify-between p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl transition-all group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">LinkedIn</span>
+<span class="font-code-sm text-code-sm text-secondary">linkedin.com/in/zamoranosousa</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_outward</span>
+</a>
+<!-- E-mail -->
+<a class="flex items-center justify-between p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl transition-all group" href="mailto:contato@exemplo.com">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">E-mail direto</span>
+<span class="font-code-sm text-code-sm text-secondary">contato@exemplo.com</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Smooth scroll para links internos da página
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+</script><footer class="w-full mt-auto px-gutter py-space-xl bg-surface-container-lowest/60 text-center"><div class="flex flex-col items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Zamorano Sousa</span><p class="font-label-sm text-label-sm text-secondary">Estudante de Ciência da Computação</p><p class="font-code-sm text-code-sm text-outline mt-space-sm">© 2025 Zamorano Sousa. Todos os direitos reservados.</p></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm transition-colors text-primary font-bold" data-path="portfolio" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm">Início</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="projetos" href="#"><span class="material-symbols-outlined text-[22px]">code_blocks</span><span class="font-label-sm text-label-sm">Projetos</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sobre" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm">Sobre</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contato" href="#"><span class="material-symbols-outlined text-[22px]">mail</span><span class="font-label-sm text-label-sm">Contato</span></a></div></nav></body></html>
